@@ -343,5 +343,10 @@ namespace CineManager
         {
             Application.Exit();
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Desenvolvido por\n\n Ronye do Lago Cornetti Rocha - 2017", "Sobre");
+        }
     }
 }
