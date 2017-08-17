@@ -251,7 +251,6 @@ namespace CineManager
             editarAd.btnSelecionar.Enabled = false;
 
             editarAd.btnSalvar.Hide();
-            //editarAd.btnSalvar.Click += BtnSalvar_Click;
             Button btnEditar = new Button();
             btnEditar.Text = "Editar";
             btnEditar.Size = new Size(97, 23);
@@ -259,9 +258,18 @@ namespace CineManager
             btnEditar.UseVisualStyleBackColor = true;
             btnEditar.Parent = editarAd;
             btnEditar.Show();
-
+            btnEditar.Click += BtnEditar_Click1;
 
             editarAd.Show();
+        }
+
+        // Evento de click do botão Editar do form Editar Ator/Diretor
+        private void BtnEditar_Click1(object sender, EventArgs e)
+        {
+            editarAd.tboNome.Enabled = true;
+            editarAd.tboDataNascimento.Enabled = true;
+            editarAd.tboNacionalidade.Enabled = true;
+            editarAd.btnSelecionar.Enabled = true;
         }
 
         private void BtnSalvar_Click(object sender, EventArgs e)
