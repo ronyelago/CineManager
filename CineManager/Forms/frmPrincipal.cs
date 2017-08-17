@@ -253,10 +253,13 @@ namespace CineManager
             editarAd.btnSalvar.Hide();
             //editarAd.btnSalvar.Click += BtnSalvar_Click;
             Button btnEditar = new Button();
-            btnEditar.Size = new Size(100, 50);
-            btnEditar.Location = new Point(300, 200);
+            btnEditar.Text = "Editar";
+            btnEditar.Size = new Size(97, 23);
+            btnEditar.Location = new Point(272, 465);
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Parent = editarAd;
             btnEditar.Show();
+
 
             editarAd.Show();
         }
