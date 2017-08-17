@@ -250,8 +250,12 @@ namespace CineManager
             editarAd.tboDataNascimento.Enabled = false;
             editarAd.btnSelecionar.Enabled = false;
 
-            editarAd.btnSalvar.Text = "Editar";
-            editarAd.btnSalvar.Click += BtnSalvar_Click;
+            editarAd.btnSalvar.Hide();
+            //editarAd.btnSalvar.Click += BtnSalvar_Click;
+            Button btnEditar = new Button();
+            btnEditar.Width = 50;
+            btnEditar.Height = 100;
+            btnEditar.Show();
 
             editarAd.Show();
         }
